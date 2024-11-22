@@ -1,21 +1,26 @@
-#AdRules补充 11-19
+#AdRules补充 11-22
 
 DOMAIN-SUFFIX,adjust.world
 DOMAIN-SUFFIX,auth.wosms.cn
 DOMAIN-SUFFIX,busuanzi.ibruce.info
+DOMAIN-SUFFIX,config.cmpassport.com
 DOMAIN-SUFFIX,configsvr.msf.3g.qq.com
 DOMAIN-SUFFIX,crash.xiaohongshu.com
 DOMAIN-SUFFIX,enrichgw.10010.com
+DOMAIN-SUFFIX,flash.xiaohongshu.com
+DOMAIN-SUFFIX,fourier.alibaba.com
 DOMAIN-SUFFIX,fp-it.fengkongcloud.com
+DOMAIN-SUFFIX,getbeamer.com
 DOMAIN-SUFFIX,getui.net
 DOMAIN-SUFFIX,ifs.tanx.com
 DOMAIN-SUFFIX,ilce.alicdn.com
 DOMAIN-SUFFIX,imasdk.googleapis.com
+DOMAIN-SUFFIX,mazu.m.qq.com
 DOMAIN-SUFFIX,mssdk.zijieapi.com
 DOMAIN-SUFFIX,onesignal.com
 DOMAIN-SUFFIX,onetrust.com
 DOMAIN-SUFFIX,opencloud.wostore.cn
-DOMAIN-SUFFIX,opencloud.wostore.cn
+DOMAIN-SUFFIX,plausible.io
 DOMAIN-SUFFIX,securemetrics.apple.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
