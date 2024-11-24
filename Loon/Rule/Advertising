@@ -1,5 +1,6 @@
-#AdRules补充 11-22
+#AdRules补充 11-25
 
+DOMAIN,applogs.thepaper.cn
 DOMAIN-SUFFIX,adjust.world
 DOMAIN-SUFFIX,auth.wosms.cn
 DOMAIN-SUFFIX,busuanzi.ibruce.info
@@ -23,4 +24,5 @@ DOMAIN-SUFFIX,opencloud.wostore.cn
 DOMAIN-SUFFIX,plausible.io
 DOMAIN-SUFFIX,securemetrics.apple.com
 DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,swiftgram.app
 DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
