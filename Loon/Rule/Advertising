@@ -1,8 +1,9 @@
-#AdRules补充 11-25
+#AdRules补充 11-28
 
 DOMAIN,applogs.thepaper.cn
 DOMAIN-SUFFIX,adjust.world
 DOMAIN-SUFFIX,auth.wosms.cn
+DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,busuanzi.ibruce.info
 DOMAIN-SUFFIX,config.cmpassport.com
 DOMAIN-SUFFIX,configsvr.msf.3g.qq.com
@@ -22,7 +23,10 @@ DOMAIN-SUFFIX,onesignal.com
 DOMAIN-SUFFIX,onetrust.com
 DOMAIN-SUFFIX,opencloud.wostore.cn
 DOMAIN-SUFFIX,plausible.io
+DOMAIN-SUFFIX,rdelivery.qq.com
+DOMAIN-SUFFIX,referee.xiaohongshu.com
 DOMAIN-SUFFIX,securemetrics.apple.com
 DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,snowflake.qq.com
 DOMAIN-SUFFIX,swiftgram.app
 DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
