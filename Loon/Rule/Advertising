@@ -1,4 +1,4 @@
-#AdRules补充 11-28
+#AdRules补充 12-1
 
 DOMAIN,applogs.thepaper.cn
 DOMAIN-SUFFIX,adjust.world
@@ -8,6 +8,8 @@ DOMAIN-SUFFIX,busuanzi.ibruce.info
 DOMAIN-SUFFIX,config.cmpassport.com
 DOMAIN-SUFFIX,configsvr.msf.3g.qq.com
 DOMAIN-SUFFIX,crash.xiaohongshu.com
+DOMAIN-SUFFIX,df.tanx.com
+DOMAIN-SUFFIX,dreport.meituan.net
 DOMAIN-SUFFIX,enrichgw.10010.com
 DOMAIN-SUFFIX,flash.xiaohongshu.com
 DOMAIN-SUFFIX,fourier.alibaba.com
