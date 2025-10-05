@@ -23,6 +23,7 @@ payload:
   - DOMAIN,eco-push-api-client.meiqia.com
   - DOMAIN,errlog.umeng.com
   - DOMAIN,fairplay.l.qq.com
+  - DOMAIN,emby.hohai.eu.org
   - DOMAIN,image.maimn.com
   - DOMAIN,img.bfzypic.com
   - DOMAIN,img.ffzypic.com
@@ -131,7 +132,6 @@ payload:
   - DOMAIN-SUFFIX,hdupt.com
   - DOMAIN-SUFFIX,hdzone.me
   - DOMAIN-SUFFIX,hitpt.com
-  - DOMAIN-SUFFIX,hohai.eu.org
   - DOMAIN-SUFFIX,hudbt.hust.edu.cn
   - DOMAIN-SUFFIX,i234.me
   - DOMAIN-SUFFIX,icetorrent.org
