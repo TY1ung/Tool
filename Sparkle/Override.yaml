@@ -58,7 +58,7 @@ rules:
   - RULE-SET,GlobalMedia,国际媒体
   - RULE-SET,Apple,苹果服务
   - RULE-SET,Github,手动切换
-  - RULE-SET,Microsoft,OpenAi
+  - RULE-SET,Microsoft,DIRECT
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Telegram,电报消息
   - RULE-SET,Twitter,手动切换
