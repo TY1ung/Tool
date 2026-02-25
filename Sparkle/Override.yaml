@@ -6,7 +6,6 @@ proxy-groups:
 #分流分组
   - {name: 手动切换, type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
   - {name: 苹果服务, type: select, proxies: [DIRECT, 手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png }
-  - {name: 哔哩哔哩, type: select, proxies: [DIRECT, 香港节点, 台湾节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png }
   - {name: Emby服务, type: select, proxies: [DIRECT, 手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: OpenAi,  type: select, proxies: [台湾节点, 美国节点, 手动切换], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
   - {name: RF4,     type: select, proxies: [手动切换, IEPL家宽], icon: https://raw.githubusercontent.com/TY1ung/QuantumultX/refs/heads/master/IconSet/FishBone.png }
@@ -56,7 +55,7 @@ rules:
   - RULE-SET,OpenAi,OpenAi
   - RULE-SET,RF4,RF4
   - RULE-SET,Emby,Emby服务
-  - RULE-SET,BiliBili,哔哩哔哩
+  - RULE-SET,BiliBili,DIRECT
   - RULE-SET,Bing,OpenAi
   - RULE-SET,Brave,OpenAi
   - RULE-SET,GlobalMedia,国际媒体
