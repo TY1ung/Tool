@@ -228,6 +228,7 @@ payload:
   - DOMAIN-SUFFIX,getbumptop.com
   - DOMAIN-SUFFIX,getmdl.io
   - DOMAIN-SUFFIX,getoutline.org
+  - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,ggoogle.com
   - DOMAIN-SUFFIX,gipscorp.com
   - DOMAIN-SUFFIX,gkecnapps.cn
