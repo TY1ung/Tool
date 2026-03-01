@@ -19,6 +19,7 @@ proxy-groups:
 rules:
     - 'RULE-SET,adrules_domainset,AdRules'
     - 'RULE-SET,AiChat_No_Resolve,AiChat'
+    - 'DOMAIN-SUFFIX,okx.com,Proxy'
     - 'RULE-SET,Apple_Classical_No_Resolve,Apple'
     - 'RULE-SET,Google_No_Resolve,Google'
     - 'RULE-SET,RF4_No_Resolve,RF4'
