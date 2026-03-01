@@ -1,0 +1,43 @@
+proxy-groups:
+  - {name: Proxy, type: select, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png }
+  - {name: AiChat, type: select, proxies: ['🇨🇳 Taiwan', '🇯🇵 Japan'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png }
+  - {name: RF4, type: select, proxies: ['🏠 Home Broadband', DIRECT], icon: https://raw.githubusercontent.com/TY1ung/QuantumultX/refs/heads/master/IconSet/FishBone.png }
+  - {name: Google, type: select, proxies: [ '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
+  - {name: Apple, type: select, proxies: [DIRECT,  '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png }
+  - {name: Emby, type: select, proxies: [DIRECT, Proxy, '🇭🇰 Hong Kong', '🇯🇵 Japan', '🇨🇳 Taiwan', '🇺🇸 United States', '🇸🇬 Singapore'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
+  - {name: Game, type: select, proxies: [DIRECT, Proxy, '🇭🇰 Hong Kong', '🇯🇵 Japan','🇨🇳 Taiwan',  '🇺🇸 United States', '🇸🇬 Singapore'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png }
+  - {name: AdRules, type: select, proxies: [REJECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
+  - {name: Final, type: select, proxies: [Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
+  
+  - {name:  '🏠 Home Broadband', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "IEPL|家宽|Direct", icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/IEPL.png }
+  - {name:  '🇭🇰 Hong Kong', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
+  - {name:  '🇯🇵 Japan', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "日|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
+  - {name:  '🇨🇳 Taiwan', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
+  - {name:  '🇺🇸 United States', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
+  - {name:  '🇸🇬 Singapore', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
+
+rules:
+    - 'RULE-SET,adrules_domainset,AdRules'
+    - 'RULE-SET,AiChat_No_Resolve,AiChat'
+    - 'RULE-SET,Apple_Classical_No_Resolve,Apple'
+    - 'RULE-SET,Google_No_Resolve,Google'
+    - 'RULE-SET,RF4_No_Resolve,RF4'
+    - 'RULE-SET,YouTube_No_Resolve,Google'
+    - 'RULE-SET,BiliBili_No_Resolve,DIRECT'
+    - 'RULE-SET,Microsoft_No_Resolve,DIRECT'
+    - 'RULE-SET,Lan_No_ResolveDIRECT'
+    - 'RULE-SET,Download_No_Resolve,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,Final'
+
+rule-providers:
+    adrules_domainset  : { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt', path: ./providers/adrules_domainset.txt, interval: 86400 }
+    Apple_Classical_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml', path: ./providers/Apple_Classical_No_Resolve.yaml, interval: 86400 }
+    BiliBili_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili_No_Resolve.yaml', path: ./providers/BiliBili_No_Resolve.yaml, interval: 86400 }
+    YouTube_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube_No_Resolve.yaml', path: ./providers/YouTube_No_Resolve.yaml, interval: 86400 }
+    AiChat_No_Resolve: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/TY1ung/Tool/refs/heads/main/Sparkle/Rules/AiChat_No_Resolve.list', path: ./providers/AiChat_No_Resolve.yaml, interval: 86400 }
+    Google_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google_No_Resolve.yaml', path: ./providers/Google_No_Resolve.yaml, interval: 86400 }
+    RF4_No_Resolve: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/TY1ung/Tool/refs/heads/main/Sparkle/Rules/RF4_No_Resolve.yaml', path: ./providers/RF4_No_Resolve.yaml, interval: 86400 }
+    Microsoft_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml', path: ./providers/Microsoft_No_Resolve.yaml, interval: 86400 }
+    Lan_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan_No_Resolve.yaml', path: ./providers/Lan_No_Resolve.yaml, interval: 86400 }
+    Download_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download_No_Resolve.yaml', path: ./providers/Download_No_Resolve.yaml, interval: 86400 }
