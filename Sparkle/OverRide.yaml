@@ -1,6 +1,7 @@
 proxy-groups:
   - {name: Proxy, type: select, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png }
   - {name: AiChat, type: select, proxies: ['🇨🇳 Taiwan', '🇯🇵 Japan'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png }
+  - {name: Crypto, type: select, proxies: ['🇨🇳 Taiwan', '🇯🇵 Japan'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_1.png }
   - {name: RF4, type: select, proxies: ['🏠 Home Broadband', DIRECT], icon: https://raw.githubusercontent.com/TY1ung/QuantumultX/refs/heads/master/IconSet/FishBone.png }
   - {name: Google, type: select, proxies: [ '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
   - {name: Apple, type: select, proxies: [DIRECT,  '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png }
@@ -19,7 +20,7 @@ proxy-groups:
 rules:
     - 'RULE-SET,adrules_domainset,AdRules'
     - 'RULE-SET,AiChat_No_Resolve,AiChat'
-    - 'DOMAIN-SUFFIX,okx.com,Proxy'
+    - 'RULE-SET,Cryptocurrency_No_Resolve,Crypto'
     - 'RULE-SET,Apple_Classical_No_Resolve,Apple'
     - 'RULE-SET,Google_No_Resolve,Google'
     - 'RULE-SET,RF4_No_Resolve,RF4'
@@ -35,6 +36,7 @@ rule-providers:
     adrules_domainset  : { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt', path: ./providers/adrules_domainset.txt, interval: 86400 }
     Apple_Classical_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml', path: ./providers/Apple_Classical_No_Resolve.yaml, interval: 86400 }
     BiliBili_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili_No_Resolve.yaml', path: ./providers/BiliBili_No_Resolve.yaml, interval: 86400 }
+    Cryptocurrency_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cryptocurrency/Cryptocurrency_No_Resolve.yaml', path: ./providers/Cryptocurrency_No_Resolve.yaml, interval: 86400 }
     YouTube_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube_No_Resolve.yaml', path: ./providers/YouTube_No_Resolve.yaml, interval: 86400 }
     AiChat_No_Resolve: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/TY1ung/Tool/refs/heads/main/Sparkle/Rules/AiChat_No_Resolve.list', path: ./providers/AiChat_No_Resolve.yaml, interval: 86400 }
     Google_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google_No_Resolve.yaml', path: ./providers/Google_No_Resolve.yaml, interval: 86400 }
