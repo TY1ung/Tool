@@ -32,7 +32,7 @@ rules:
     - 'MATCH,Final'
 
 rule-providers:
-    adrules_domainset  : { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt', path: ./providers/adrules_domainset.txt, interval: 86400 }
+    adrules_domainset: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt', path: ./providers/adrules_domainset.txt, interval: 86400 }
     Apple_Classical_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml', path: ./providers/Apple_Classical_No_Resolve.yaml, interval: 86400 }
     BiliBili_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili_No_Resolve.yaml', path: ./providers/BiliBili_No_Resolve.yaml, interval: 86400 }
     Cryptocurrency_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cryptocurrency/Cryptocurrency_No_Resolve.yaml', path: ./providers/Cryptocurrency_No_Resolve.yaml, interval: 86400 }
