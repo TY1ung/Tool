@@ -5,8 +5,6 @@ proxy-groups:
   - {name: RF4, type: select, proxies: ['🏠 Home Broadband', DIRECT], icon: https://raw.githubusercontent.com/TY1ung/QuantumultX/refs/heads/master/IconSet/FishBone.png }
   - {name: Google, type: select, proxies: [ '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
   - {name: Apple, type: select, proxies: [DIRECT,  '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png }
-  - {name: Emby, type: select, proxies: [DIRECT, Proxy, '🇭🇰 Hong Kong', '🇯🇵 Japan', '🇨🇳 Taiwan', '🇺🇸 United States', '🇸🇬 Singapore'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
-  - {name: Game, type: select, proxies: [DIRECT, Proxy, '🇭🇰 Hong Kong', '🇯🇵 Japan','🇨🇳 Taiwan',  '🇺🇸 United States', '🇸🇬 Singapore'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png }
   - {name: AdRules, type: select, proxies: [REJECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
   - {name: Final, type: select, proxies: [Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   
