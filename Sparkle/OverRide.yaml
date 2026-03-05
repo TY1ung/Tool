@@ -6,12 +6,12 @@ proxy-groups:
   - {name: Google, type: select, proxies: [ '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
   - {name: Apple, type: select, proxies: [DIRECT,  '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png }
   
-  - {name:  '🏠 Home Broadband', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "IEPL|家宽|Direct", icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/IEPL.png }
-  - {name:  '🇭🇰 Hong Kong', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
-  - {name:  '🇯🇵 Japan', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "日|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
-  - {name:  '🇨🇳 Taiwan', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
-  - {name:  '🇺🇸 United States', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
-  - {name:  '🇸🇬 Singapore', type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
+  - {name:  '🏠 Home Broadband', type: select, include-all: true, interval: 600, tolerance: 50,  filter: "IEPL|家宽|Direct", icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/IEPL.png }
+  - {name:  '🇭🇰 Hong Kong', type: select, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
+  - {name:  '🇯🇵 Japan', type: select, include-all: true, interval: 600, tolerance: 50,  filter: "日|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
+  - {name:  '🇨🇳 Taiwan', type: select, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
+  - {name:  '🇺🇸 United States', type: select, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
+  - {name:  '🇸🇬 Singapore', type: select, include-all: true, interval: 600, tolerance: 50,  filter: "新|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
 
   - {name: AdRules, type: select, proxies: [REJECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png }
   - {name: Final, type: select, proxies: [Proxy], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
