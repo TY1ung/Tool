@@ -2,7 +2,7 @@ proxy-groups:
   - {name: Proxy, type: select, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png }
   - {name: AiChat, type: select, proxies: ['🇨🇳 Taiwan', '🇯🇵 Japan'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png }
   - {name: Crypto, type: select, proxies: ['🇨🇳 Taiwan', '🇯🇵 Japan'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_1.png }
-  - {name: RF4, type: select, proxies: ['🏠 Home Broadband', DIRECT], icon: https://raw.githubusercontent.com/TY1ung/QuantumultX/refs/heads/master/IconSet/FishBone.png }
+  - {name: RF4, type: select, proxies: ['🏠 Home Broadband','🇨🇳 Taiwan',  DIRECT], icon: https://raw.githubusercontent.com/TY1ung/QuantumultX/refs/heads/master/IconSet/FishBone.png }
   - {name: Google, type: select, proxies: [ '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
   - {name: Apple, type: select, proxies: [DIRECT,  '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png }
   
