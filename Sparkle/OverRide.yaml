@@ -3,6 +3,7 @@ proxy-groups:
   - {name: AiChat, type: select, proxies: ['🇨🇳 Taiwan', '🇯🇵 Japan'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png }
   - {name: Crypto, type: select, proxies: ['🇨🇳 Taiwan', '🇯🇵 Japan'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_1.png }
   - {name: RF4, type: select, proxies: ['🏠 Home Broadband','🇨🇳 Taiwan',  DIRECT], icon: https://raw.githubusercontent.com/TY1ung/QuantumultX/refs/heads/master/IconSet/FishBone.png }
+  - {name: Emby, type: select, proxies: [DIRECT, 香港节点, 日本节点, 美国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: Google, type: select, proxies: [ '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
   - {name: Apple, type: select, proxies: [DIRECT,  '🇺🇸 United States'], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png }
   
@@ -23,6 +24,7 @@ rules:
     - 'RULE-SET,Apple_Classical_No_Resolve,Apple'
     - 'RULE-SET,Google_No_Resolve,Google'
     - 'RULE-SET,RF4_No_Resolve,RF4'
+    - 'RULE-SET,Emby_No_Resolve,Emby'
     - 'RULE-SET,YouTube_No_Resolve,Google'
     - 'RULE-SET,BiliBili_No_Resolve,DIRECT'
     - 'RULE-SET,Microsoft_No_Resolve,DIRECT'
@@ -38,6 +40,7 @@ rule-providers:
     Cryptocurrency_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cryptocurrency/Cryptocurrency_No_Resolve.yaml', path: ./providers/Cryptocurrency_No_Resolve.yaml, interval: 86400 }
     YouTube_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube_No_Resolve.yaml', path: ./providers/YouTube_No_Resolve.yaml, interval: 86400 }
     AiChat_No_Resolve: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/TY1ung/Tool/refs/heads/main/Sparkle/Rules/AiChat_No_Resolve.yaml', path: ./providers/AiChat_No_Resolve.yaml, interval: 86400 }
+    Emby_No_Resolve: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/TY1ung/Tool/refs/heads/main/Sparkle/Rules/Emby_No_Resolve.yaml', path: ./providers/Emby_No_Resolve.yaml, interval: 86400 }
     Google_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google_No_Resolve.yaml', path: ./providers/Google_No_Resolve.yaml, interval: 86400 }
     RF4_No_Resolve: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/TY1ung/Tool/refs/heads/main/Sparkle/Rules/RF4_No_Resolve.yaml', path: ./providers/RF4_No_Resolve.yaml, interval: 86400 }
     Microsoft_No_Resolve: { type: http, behavior: classical, url: 'https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml', path: ./providers/Microsoft_No_Resolve.yaml, interval: 86400 }
