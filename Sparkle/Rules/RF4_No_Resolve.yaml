@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN,api.rf4game.ru
   - IP-CIDR,91.132.228.133/32,no-resolve
   - IP-CIDR,91.194.110.5/32,no-resolve
   - IP-CIDR,185.71.66.225/32,no-resolve
