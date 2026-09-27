@@ -1,7 +1,3 @@
-# NAME: Ai Rules
-# AUTHOR: https://t.me/ddgksf2021
-# UPDATED: 2025-11-26
-
 payload:
 # > Ai general rules
   - DOMAIN,api.statsig.com
